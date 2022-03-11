@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    ---blue-color: rgb(60, 60, 247);
+    --purple-color: rgb(218, 11, 218);
+}
+body{
+    margin: 0;  
+    width: 100vw;
+    height: 100vh;  
+    display: flex;
+    flex-direction: column;
+    font-family: Open Sans, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/*HEADER*/
+
+/*INICIAL PAGE*/
+.inicialPageContainer{
+    width: 100%;    
+}
+/*LEFT*/
+.leftInicialPage{
+    background: linear-gradient(120deg, var(---blue-color), var(--purple-color));
+    color: #fff;
+    width: 900px;
+    height: 900px;
+    border-radius: 50%; 
+    position: absolute;
+    top: -270px;
+    left: -200px;
+    z-index: 1;
+}
+.inicialPageTextContent{
+    position: absolute;
+    top: 450px;
+    left: 250px;
+    font-size: 20px;
+}
+.inicialPageTextContent > h1{  
+    font-weight: 500px;
+}
+.inicialPageTextContent > h3{
+    font-weight: 100;
+    font-size: 20px;
+}
+/*RIGHT*/
+.rightInicialPage >*{
+    position: absolute;
+    box-shadow: 3px 3px 10px gray;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.imgTablet{
+    width: 200px;
+    height: 200px;
+    right: 20px;
+    top: -20px
+}
+.imgPhone{
+    width: 250px;
+    height: 250px;
+    right: 380px;
+    top: 50px
+}
+.imgPC{
+    width: 350px;
+    height: 350px;
+    right: 60px;
+    top: 200px
+}
