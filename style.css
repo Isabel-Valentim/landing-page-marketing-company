@@ -3,11 +3,11 @@
 :root{
     ---blue-color: rgb(60, 60, 247);
     --purple-color: rgb(218, 11, 218);
+    --dark-gray-text: rgb(48, 48, 48)
 }
 body{
     margin: 0;  
     width: 100vw;
-    height: 100vh;  
     display: flex;
     flex-direction: column;
     font-family: Open Sans, sans-serif;
@@ -15,10 +15,18 @@ body{
     overflow-y: auto;
 }
 /*HEADER*/
-
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
 /*INICIAL PAGE*/
 .inicialPageContainer{
-    width: 100%;    
+    width: 100%;
+    height: 110vh; 
 }
 /*LEFT*/
 .leftInicialPage{
@@ -30,7 +38,6 @@ body{
     position: absolute;
     top: -270px;
     left: -200px;
-    z-index: 1;
 }
 .inicialPageTextContent{
     position: absolute;
@@ -51,6 +58,7 @@ body{
     box-shadow: 3px 3px 10px gray;
     border-radius: 50%;
     object-fit: cover;
+    z-index: -1;
 }
 .imgTablet{
     width: 200px;
@@ -70,3 +78,55 @@ body{
     right: 60px;
     top: 200px
 }
+
+/*ABOUT US PAGE*/
+.aboutUsPageContainer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    margin: 30px 100px;
+}
+.leftAboutUs{
+    color: var(--dark-gray-text);
+    width: 30%;
+}
+.divisionBar{
+    width: 80px;
+    height: 5px;
+    border-radius: 10px;
+    background:linear-gradient(120deg, var(---blue-color), var(--purple-color));
+}
+.leftAboutUs > h2{
+    font-size: 30px;
+}
+.leftAboutUs > h4{
+    font-weight: 100;
+}
+.rightAboutUs{
+    width: 60%;
+    display:flex;
+    justify-content: center;
+}
+.resoursesAboutUsContainer{
+    width: 200px;
+    margin: 30px 30px;
+}
+.thinDivisionBar{
+    width: 40px;
+    height: 2px;
+    border-radius: 10px;
+    background:linear-gradient(120deg, var(---blue-color), var(--purple-color));
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    background:linear-gradient(120deg, var(---blue-color), var(--purple-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#aboutUsIcons{
+   color: #fff;
+} 
