@@ -181,10 +181,50 @@ header{
     margin: 15px 10px;
     font-size: 10px;
     font-weight: bold;
-    color:;
 }
 .cursoData > *{
     background: -webkit-linear-gradient(var(---blue-color) 40%, var(--purple-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.paymentPlansContainer{
+    display: flex;
+    justify-content: center;
+}
+.paymentPlan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: var(--dark-gray-text);
+    width: 200px;
+    height: 360px;
+    margin: 30px;
+    box-shadow: 2px 2px 20px rgba(97, 97, 97, 0.61);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.paymentPlan:hover{
+    transform: scale(1.1);
+}
+.paymentPlan > i{
+    font-size: 70px;
+    background: -webkit-linear-gradient(120deg, var(---blue-color), var(--purple-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: -20px;
+}
+.perMonth{
+    font-size: 10px;
+}
+.benefit{
+    color: rgb(109, 109, 109);
+    font-weight: 100;
+}
+
