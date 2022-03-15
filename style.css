@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap');
 
 :root{
     ---blue-color: rgb(60, 60, 247);
@@ -22,6 +22,20 @@ header{
     position: absolute;
     top: 0px;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--dark-gray-text);
+}
+.logo, #menuBars{
+    margin: 20px;
+}
+.logo{
+    font-family: 'Courgette', cursive;
+    background: -webkit-linear-gradient(120deg, var(---blue-color), var(--purple-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
 }
 /*INICIAL PAGE*/
 .inicialPageContainer{
@@ -199,7 +213,7 @@ header{
     background-color: #fff;
     color: var(--dark-gray-text);
     width: 200px;
-    height: 360px;
+    height: 340px;
     margin: 30px;
     box-shadow: 2px 2px 20px rgba(97, 97, 97, 0.61);
     border-radius: 10px;
@@ -215,6 +229,7 @@ header{
     -webkit-text-fill-color: transparent;
 }
 .price{
+    font-size: 12px;
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -223,8 +238,10 @@ header{
 .perMonth{
     font-size: 10px;
 }
-.benefit{
+.paymentPlan > h6{
     color: rgb(109, 109, 109);
     font-weight: 100;
+    margin: 10px; 
+    text-align: center;
 }
 
