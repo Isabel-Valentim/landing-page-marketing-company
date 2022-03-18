@@ -53,6 +53,7 @@ header{
     top: -270px;
     left: -200px;
 }
+
 .inicialPageTextContent{
     position: absolute;
     top: 450px;
@@ -61,10 +62,10 @@ header{
 }
 .inicialPageTextContent > h1{  
     font-weight: 500px;
+    font-size: 40px;
 }
 .inicialPageTextContent > h3{
     font-weight: 100;
-    font-size: 20px;
 }
 /*RIGHT*/
 .rightInicialPage >*{
@@ -92,6 +93,7 @@ header{
     right: 60px;
     top: 200px
 }
+
 
 /*ABOUT US PAGE*/
 .aboutUsPageContainer{
@@ -258,6 +260,24 @@ header{
     margin: 10px; 
     text-align: center;
 }
+
+@media(max-width:600px){
+    .paymentCTA{
+        margin: 30px 50px;
+    }
+    .paymentPlan{
+        width: 150px;
+        height: 300px;
+        margin: 15px; 
+    }
+    .price{
+        font-size: 10px;
+    }
+    .perMonth{
+        font-size: 8px;
+    }
+}
+/*FOOTER*/
 footer{
     top: 30px;
     background-color: rgba(241, 241, 241, 0.884);    
@@ -267,7 +287,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: smaller;
+    font-size: 15px;
     background: -webkit-linear-gradient(120deg, var(---blue-color), var(--purple-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -276,6 +296,26 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: x-small;
+    font-size: 10px;
     font-weight: bold;
+    margin: 10px;
 }
+@media(max-width:1200px){
+    .topFooter{
+        margin: 0px 200px;
+        font-size: 12px;
+    }
+    .bottomFooter{
+        font-size: 9px;
+    }
+}
+@media(max-width:700px){
+    .topFooter{
+        margin: 0px 100px;
+        font-size: 10px;
+    }
+    .bottomFooter{
+        font-size: 8px;
+    }
+}
+
