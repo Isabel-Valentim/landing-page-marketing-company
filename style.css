@@ -27,7 +27,7 @@ header{
     justify-content: space-between;
     color: var(--dark-gray-text);
 }
-.logo, #menuBars{
+.logo, .menuBars{
     margin: 20px;
 }
 .logo{
