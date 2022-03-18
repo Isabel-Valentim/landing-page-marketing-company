@@ -204,6 +204,20 @@ header{
 .paymentPlansContainer{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+.paymentCTA{
+    margin: 30px 100px;
+    display: flex;
+    flex-direction: column;
+}
+.paymentCTA > h2{
+    color: var(--dark-gray-text);
+    font-size: 30px;
+}
+.paymentPlans{
+    display: flex;
+    justify-content: center;
 }
 .paymentPlan{
     display: flex;
@@ -244,4 +258,24 @@ header{
     margin: 10px; 
     text-align: center;
 }
-
+footer{
+    top: 30px;
+    background-color: rgba(241, 241, 241, 0.884);    
+}
+.topFooter{
+    margin: 10px 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: smaller;
+    background: -webkit-linear-gradient(120deg, var(---blue-color), var(--purple-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bottomFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-small;
+    font-weight: bold;
+}
