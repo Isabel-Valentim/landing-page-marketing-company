@@ -40,7 +40,7 @@ header{
 /*INICIAL PAGE*/
 .inicialPageContainer{
     width: 100%;
-    height: 110vh; 
+    height: 110vh;
 }
 /*LEFT*/
 .leftInicialPage{
@@ -56,16 +56,32 @@ header{
 
 .inicialPageTextContent{
     position: absolute;
-    top: 450px;
-    left: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 500px;
+    left: 230px;
     font-size: 20px;
 }
 .inicialPageTextContent > h1{  
     font-weight: 500px;
-    font-size: 40px;
+    font-size: 30px;
 }
 .inicialPageTextContent > h3{
+    font-size: 20px;
     font-weight: 100;
+    margin: 1px;
+}
+@media (min-width: 667px) {
+    .inicialPageTextContent{
+        top: 450px;
+        left: 250px;
+        align-items: start;
+        margin: 10px;
+    }
+    .inicialPageTextContent > h1{  
+        font-size: 40px;
+    }
 }
 /*RIGHT*/
 .rightInicialPage >*{
@@ -78,22 +94,39 @@ header{
 .imgTablet{
     width: 200px;
     height: 200px;
-    right: 20px;
+    right: -40px;
     top: -20px
 }
 .imgPhone{
-    width: 250px;
-    height: 250px;
-    right: 380px;
-    top: 50px
+    width: 180px;
+    height: 180px;
+    right: 10px;
+    top: 420px
 }
 .imgPC{
-    width: 350px;
-    height: 350px;
-    right: 60px;
-    top: 200px
+    width: 250px;
+    height: 250px;
+    right: 110px;
+    top: 160px
 }
-
+@media (min-width: 1024px) {
+    .imgTablet{
+        right: 20px;
+        top: -20px
+    }
+    .imgPhone{
+        width: 250px;
+        height: 250px;
+        right: 380px;
+        top: 50px
+    }
+    .imgPC{
+        width: 350px;
+        height: 350px;
+        right: 60px;
+        top: 200px
+    }
+}
 
 /*ABOUT US PAGE*/
 .aboutUsPageContainer{
@@ -146,6 +179,9 @@ header{
 #aboutUsIcons{
    color: #fff;
 } 
+@media (min-width: 667px) {
+    
+}
 /*EXPLORE THE COURSES*/
 .coursesSectionText{
     margin: 30px 100px;
