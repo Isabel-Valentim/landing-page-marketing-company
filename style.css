@@ -247,24 +247,24 @@ header{
 }
 /*EXPLORE THE COURSES*/
 .coursesSectionText{
-    margin: 30px 100px;
+    margin: 30px 50px;
     color: var(--dark-gray-text);
     font-size: 20px;
 }
 .coursesSectionbuttonsContainer{
-    margin: 30px 100px;
+    margin: 30px 50px;
 }
 #prevBtn,#nextBtn{
     background: linear-gradient(120deg, var(---blue-color), var(--purple-color));
     border: none;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     border-radius: 20px;
     color: #fff;
     cursor: pointer;
 }
 .coursesSectioncoursesContainer{
     display: flex; 
-    width: calc(320px*5); 
+    width: calc(220px*5); 
 }
 .curso{
     background-color: #fff;
@@ -272,28 +272,28 @@ header{
     flex-direction: column;
     box-shadow: 30px 2px 100px rgba(97, 97, 97, 0.61);
     margin: 10px;
-    width: 300px;
-    height: 280px;
-    transform: translateX(320px);  
+    width: 200px;
+    height: 180px;
+    transform: translateX(220px);  
     border-radius: 10px; 
 }
 .curso > img{
-    width: 300px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 .title{
     color:var(--dark-gray-text);
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
     margin: 10px 10px;
 }
 .cursoData{
     display: flex;
     justify-content: space-between;
-    margin: 15px 10px;
+    margin: 0px 10px 10px 5px;
     font-size: 10px;
     font-weight: bold;
 }
@@ -302,6 +302,65 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+@media(min-width: 667px) {
+    .coursesSectionText{
+        margin: 30px 100px;
+        color: var(--dark-gray-text);
+        font-size: 20px;
+    }
+    .coursesSectionbuttonsContainer{
+        margin: 30px 100px;
+    }
+    #prevBtn,#nextBtn{
+        background: linear-gradient(120deg, var(---blue-color), var(--purple-color));
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .coursesSectioncoursesContainer{
+        display: flex; 
+        width: calc(320px*5); 
+    }
+    .curso{
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 30px 2px 100px rgba(97, 97, 97, 0.61);
+        margin: 10px;
+        width: 300px;
+        height: 280px;
+        transform: translateX(320px);  
+        border-radius: 10px; 
+    }
+    .curso > img{
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .title{
+        color:var(--dark-gray-text);
+        font-size: 15px;
+        font-weight: bold;
+        margin: 10px 10px;
+    }
+    .cursoData{
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 10px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .cursoData > *{
+        background: -webkit-linear-gradient(var(---blue-color) 40%, var(--purple-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+/*PAYMENT PLANS*/
 .paymentPlansContainer{
     display: flex;
     justify-content: center;
@@ -365,9 +424,9 @@ header{
         margin: 30px 50px;
     }
     .paymentPlan{
-        width: 150px;
+        width: 140px;
         height: 300px;
-        margin: 15px; 
+        margin: 10px; 
     }
     .price{
         font-size: 10px;
